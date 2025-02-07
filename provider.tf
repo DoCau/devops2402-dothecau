@@ -6,7 +6,7 @@ terraform {
   #   }
   # }
   backend "s3" {
-    bucket = "cau-s3-bucket-dec2"
+    bucket = "cau-s3-bucket-07feb-1"
     key    = "terraform.tfstate"
     region = "ap-southeast-1"
   }
