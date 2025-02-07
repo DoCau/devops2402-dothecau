@@ -89,7 +89,7 @@ module "key-pair-items-caudo" {
 
 locals {
   //master_directory = path.root
-  master_directory = "/home/ubuntu"
+  master_directory = "/home/ubuntu/workspace/terraform-hw-a"
 }
 
 
