@@ -81,10 +81,10 @@ module "security-groups-caudo" {
 module "key-pair-items-caudo" {
   source = "./modules/aws-keypairs"
 
-  path_to_private_ec2_private_key = "${var.master_directory}/${var.path_to_private_ec2_private_key}"
-  path_to_private_ec2_public_key  = "${var.master_directory}/${var.path_to_private_ec2_public_key}"
-  path_to_public_ec2_private_key  = "${var.master_directory}/${var.path_to_public_ec2_private_key}"
-  path_to_public_ec2_public_key   = "${var.master_directory}/${var.path_to_public_ec2_public_key}"
+  path_to_private_ec2_private_key = "${local.master_directory}/${var.path_to_private_ec2_private_key}"
+  path_to_private_ec2_public_key  = "${local.master_directory}/${var.path_to_private_ec2_public_key}"
+  path_to_public_ec2_private_key  = "${local.master_directory}/${var.path_to_public_ec2_private_key}"
+  path_to_public_ec2_public_key   = "${local.master_directory}/${var.path_to_public_ec2_public_key}"
 }
 
 locals {

@@ -71,7 +71,3 @@ variable "path_to_public_ec2_public_key" {
 
 //------------------------------------------
 
-variable "master_directory" {
-  type        = string
-  description = "return path to master file main.tf"
-}
